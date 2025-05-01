@@ -76,3 +76,6 @@ jobs:
       - name: Build backend image
         run: |
           docker build -t stealth-labs-platform:${{ github.sha }} ./backend
+
+# CI/CD Pipeline — SLS-36
+# Author: Riya Desai | Sprint 1

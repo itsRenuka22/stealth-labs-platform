@@ -117,3 +117,9 @@ def delete_service(service_id: int):
     if service_id not in _services:
         raise HTTPException(status_code=404, detail="Service not found.")
     del _services[service_id]
+
+
+def validate_service_name(name: str) -> bool:
+    """Reject service names with invalid characters."""
+    import re
+    return bool(re.match(r'^[a-zA-Z0-9_-]+$', name))

@@ -50,3 +50,8 @@ def downgrade(conn):
     """Roll back the initial schema."""
     conn.execute(text("DROP TABLE IF EXISTS service_tags"))
     conn.execute(text("DROP TABLE IF EXISTS services"))
+
+# Schema design choices (SLS-28):
+# - services table holds core registry metadata
+# - service_tags uses key-value pairs for flexible metadata
+# - indexes on owner_team and language for common query patterns

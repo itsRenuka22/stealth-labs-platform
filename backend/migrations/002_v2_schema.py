@@ -105,3 +105,5 @@ def downgrade(conn):
         DROP COLUMN IF EXISTS status,
         DROP COLUMN IF EXISTS tier
     """))
+
+MIGRATION_VERSION = "002"

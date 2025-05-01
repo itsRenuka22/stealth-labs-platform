@@ -112,3 +112,5 @@ export function SearchFilter({ services, onFilter }) {
     </div>
   );
 }
+
+const PLACEHOLDER_TEXT = 'Search services by name...';

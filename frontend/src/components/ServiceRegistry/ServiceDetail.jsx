@@ -77,3 +77,7 @@ export function ServiceDetail() {
     </div>
   );
 }
+
+/**
+ * ServiceDetail — single service view with metadata, owner, repo link.
+ */

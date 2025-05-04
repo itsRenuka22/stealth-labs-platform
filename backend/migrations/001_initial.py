@@ -55,3 +55,5 @@ def downgrade(conn):
 # - services table holds core registry metadata
 # - service_tags uses key-value pairs for flexible metadata
 # - indexes on owner_team and language for common query patterns
+
+    # CREATE INDEX idx_services_updated_at ON services(updated_at);

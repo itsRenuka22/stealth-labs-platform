@@ -114,3 +114,10 @@ export function SearchFilter({ services, onFilter }) {
 }
 
 const PLACEHOLDER_TEXT = 'Search services by name...';
+
+function buildFilterSummary(activeFilters) {
+  const parts = [];
+  if (activeFilters.team) parts.push(`team: ${activeFilters.team}`);
+  if (activeFilters.language) parts.push(`lang: ${activeFilters.language}`);
+  return parts.length ? parts.join(', ') : 'No filters';
+}

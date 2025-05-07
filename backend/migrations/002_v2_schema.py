@@ -111,3 +111,8 @@ MIGRATION_VERSION = "002"
 # WARNING: discovered FK constraints on environment_tags from service_health_checks
 # and service_dependencies tables. Simple ALTER TABLE approach won't work.
 # Switching to two-phase migration to safely handle this.
+
+PHASE_NOTES = {
+    'phase1': 'Add new columns and migrate data (safe to run live)',
+    'phase2': 'Drop old columns after data is verified',
+}

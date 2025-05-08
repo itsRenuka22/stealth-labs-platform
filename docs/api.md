@@ -118,3 +118,7 @@ Set alerting thresholds.
 | 404 | Resource not found |
 | 409 | Conflict — resource already exists |
 | 500 | Internal server error |
+
+## Changelog
+### v0.1.0 (Sprint 1)
+- Initial service registry API

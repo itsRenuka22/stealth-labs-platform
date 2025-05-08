@@ -81,3 +81,12 @@ export function ServiceDetail() {
 /**
  * ServiceDetail — single service view with metadata, owner, repo link.
  */
+
+function DetailRow({ label, value }) {
+  return (
+  <div className="flex justify-between py-2">
+    <span className="font-medium">{label}</span>
+    <span>{value}</span>
+  </div>
+  );
+}

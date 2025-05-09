@@ -116,3 +116,7 @@ PHASE_NOTES = {
     'phase1': 'Add new columns and migrate data (safe to run live)',
     'phase2': 'Drop old columns after data is verified',
 }
+
+# Rollback added after Riya's review on Day 7.
+# Handles case where Phase 2 fails after dropping some but not all old columns.
+# Without this, a partial failure would leave the schema in an inconsistent state.

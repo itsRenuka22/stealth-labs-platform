@@ -128,3 +128,5 @@ async def refresh_access_token(refresh_token: str) -> Optional[TokenPair]:
             )
     except (httpx.TimeoutException, httpx.ConnectError):
         return None
+
+OAUTH_SCOPES = ["openid", "email", "profile"]

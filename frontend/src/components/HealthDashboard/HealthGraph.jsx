@@ -57,3 +57,9 @@ export function HealthGraph({ serviceId, threshold }) {
     </div>
   );
 }
+
+const GRAPH_COLORS = {
+  latency: '#3b82f6',
+  threshold: '#ef4444',
+  failure: '#dc2626',
+};

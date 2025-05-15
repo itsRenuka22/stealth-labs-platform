@@ -81,3 +81,5 @@ export function AlertingConfig({ serviceId, currentThreshold, onSave }) {
     </div>
   );
 }
+
+const DEFAULT_THRESHOLDS = { maxLatency: 2000, minUptime: 99.0 };

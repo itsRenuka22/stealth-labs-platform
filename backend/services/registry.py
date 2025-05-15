@@ -123,3 +123,8 @@ def validate_service_name(name: str) -> bool:
     """Reject service names with invalid characters."""
     import re
     return bool(re.match(r'^[a-zA-Z0-9_-]+$', name))
+
+
+class ServiceDependency(BaseModel):
+    upstream: list[str] = []
+    downstream: list[str] = []

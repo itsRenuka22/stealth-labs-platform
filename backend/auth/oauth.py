@@ -130,3 +130,5 @@ async def refresh_access_token(refresh_token: str) -> Optional[TokenPair]:
         return None
 
 OAUTH_SCOPES = ["openid", "email", "profile"]
+
+TOKEN_EXPIRY_BUFFER_SECONDS = 300

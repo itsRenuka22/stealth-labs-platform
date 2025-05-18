@@ -63,3 +63,5 @@ const GRAPH_COLORS = {
   threshold: '#ef4444',
   failure: '#dc2626',
 };
+
+const DEFAULT_HEIGHT = 192;

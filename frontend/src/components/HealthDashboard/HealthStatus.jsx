@@ -112,3 +112,9 @@ export function HealthStatus() {
 }
 
 const POLL_INTERVAL_MS = 30000;
+
+const STATUS_LABELS = {
+  healthy: 'Healthy',
+  degraded: 'Degraded',
+  down: 'Down',
+};

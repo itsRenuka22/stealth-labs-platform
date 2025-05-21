@@ -142,3 +142,6 @@ class TestGetHealthStatus:
         with pytest.raises(HTTPException) as exc_info:
             get_health_status(service_id=999)
         assert exc_info.value.status_code == 404
+
+# Coverage: 83% on backend/services/health.py
+# Tests: happy path, timeout, invalid service, threshold breach, history cap

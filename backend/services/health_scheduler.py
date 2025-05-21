@@ -55,5 +55,6 @@ def stop_scheduler():
         scheduler.shutdown()
         logger.info("Health check scheduler stopped")
 
+
 SCHEDULER_INTERVAL_MINUTES = 5
 SCHEDULER_MISFIRE_GRACE_SECONDS = 60

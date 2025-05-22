@@ -118,3 +118,6 @@ const STATUS_LABELS = {
   degraded: 'Degraded',
   down: 'Down',
 };
+
+// Polling logic: fetches GET /health/status/:id every POLL_INTERVAL_MS.
+// Cleans up interval on unmount to avoid memory leaks.

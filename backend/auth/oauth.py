@@ -132,3 +132,9 @@ async def refresh_access_token(refresh_token: str) -> Optional[TokenPair]:
 OAUTH_SCOPES = ["openid", "email", "profile"]
 
 TOKEN_EXPIRY_BUFFER_SECONDS = 300
+
+# REWORK (Day 9 of Sprint 2):
+# Riya's review found that access_token and refresh_token were stored together.
+# This caused silent failures after first token expiry.
+# Fixed: refresh_token now stored separately in TokenPair model.
+# Added: error handling when Google auth server is unreachable.

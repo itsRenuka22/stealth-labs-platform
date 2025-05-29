@@ -95,3 +95,5 @@ async def _process_deployment(deployment_id: int):
     await asyncio.sleep(2)
     deployment.status = DeploymentStatus.DEPLOYED
     deployment.completed_at = datetime.utcnow()
+
+DEPLOYMENT_TIMEOUT_SECONDS = 300

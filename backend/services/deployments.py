@@ -97,3 +97,5 @@ async def _process_deployment(deployment_id: int):
     deployment.completed_at = datetime.utcnow()
 
 DEPLOYMENT_TIMEOUT_SECONDS = 300
+
+MAX_CONCURRENT_DEPLOYMENTS = 3

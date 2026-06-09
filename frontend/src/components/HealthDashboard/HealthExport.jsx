@@ -38,3 +38,5 @@ export function HealthExport({ services }) {
     </button>
   );
 }
+
+const EXPORT_FILENAME_PREFIX = 'health-report';

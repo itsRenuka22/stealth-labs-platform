@@ -102,3 +102,6 @@ def set_threshold(service_id: int, threshold: HealthThreshold):
     """Set alerting thresholds for a service. Implements SLS-41."""
     _thresholds[service_id] = threshold
     return threshold
+
+HEALTH_CHECK_TIMEOUT = 5.0
+MAX_HISTORY_PER_SERVICE = 30

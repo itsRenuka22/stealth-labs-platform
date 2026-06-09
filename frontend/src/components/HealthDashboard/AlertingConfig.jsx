@@ -54,7 +54,7 @@ export function AlertingConfig({ serviceId, currentThreshold, onSave }) {
           className="border border-gray-300 rounded px-3 py-1.5 text-sm w-36"
         />
         <p className="text-xs text-gray-400 mt-1">
-          Service marked "degraded" if response exceeds this value
+          Service marked &quot;degraded&quot; if response exceeds this value
         </p>
       </div>
       <div>

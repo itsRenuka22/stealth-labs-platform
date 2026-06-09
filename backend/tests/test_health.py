@@ -9,7 +9,6 @@ Coverage: 83% on the health module.
 Tests cover: happy path, timeout, invalid service, threshold breach.
 """
 import pytest
-from datetime import datetime
 from unittest.mock import AsyncMock, patch, MagicMock
 import httpx
 

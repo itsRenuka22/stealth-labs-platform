@@ -96,3 +96,9 @@ export function TagManager({ serviceId, initialTags = [] }) {
     </div>
   );
 }
+
+const MAX_TAG_LENGTH = 64;
+
+function validateTag(key, value) {
+  return key.length > 0 && value.length <= MAX_TAG_LENGTH;
+}

@@ -89,3 +89,5 @@ export function DeploymentStatus() {
     </div>
   );
 }
+
+const DEPLOYMENT_COLUMNS = ['service', 'status', 'version', 'last_deploy', 'actions'];

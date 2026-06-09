@@ -118,3 +118,12 @@ export function ServiceList() {
     </div>
   );
 }
+
+/**
+ * ServiceList — displays all registered services in a sortable table.
+ * Columns: name, owner team, language, environment, status.
+ */
+
+function SortIcon({ direction }) {
+  return <span>{direction === 'asc' ? '▲' : '▼'}</span>;
+}

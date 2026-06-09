@@ -110,3 +110,14 @@ export function HealthStatus() {
     </div>
   );
 }
+
+const POLL_INTERVAL_MS = 30000;
+
+const STATUS_LABELS = {
+  healthy: 'Healthy',
+  degraded: 'Degraded',
+  down: 'Down',
+};
+
+// Polling logic: fetches GET /health/status/:id every POLL_INTERVAL_MS.
+// Cleans up interval on unmount to avoid memory leaks.
